@@ -1,0 +1,33 @@
+.ContainerPrin {
+    margin: 50px auto;
+    max-width: 940px;
+    margin: 0 auto;
+    height: 9rem;
+    position: relative;
+    background-color:transparent;
+    display: flex;            /* Establece flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.Detail-box {
+    height: 100px;
+    width: 30%;
+    padding: 1%;
+    color: black;
+}
+
+.Detail-copy {
+    font-size: .9em;
+    margin-left: 57px;
+    text-align: center;
+}
+
+.Detail-div-lines {
+    border-color: rgb(54, 58, 61);
+    border-width: 0 1px;
+    border-color: #eaeaea;
+    border-style: solid;
+}
