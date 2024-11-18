@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-ApiMarvel.jsx
+ApiMarvel.mjs
 
 # dependencies
 /node_modules

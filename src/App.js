@@ -4,6 +4,8 @@ import Navbar from './Component/NavBar';
 import Banner from './Component/Banner';
 import BannerCont from './Component/BannerCont';
 import Footer from './Component/Footer';
+import Home from './Page/Home';
+
 
 function App() {
   return (
@@ -11,9 +13,13 @@ function App() {
       <Navbar />
       <Banner />
       <BannerCont />
+      <Home />
       <Footer />
+      
     </div>
   );
 }
+
+
 
 export default App;
