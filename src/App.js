@@ -1,25 +1,30 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Component/NavBar';
 import Banner from './Component/Banner';
 import BannerCont from './Component/BannerCont';
 import Footer from './Component/Footer';
 import Home from './Page/Home';
-
+import Movies from './Page/Movies';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Banner />
-      <BannerCont />
-      <Home />
-      <Footer />
+        <Banner />
+          <BannerCont />
       
-    </div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/movies" element={<Movies />} />
+              {/* Agrega más rutas según sea necesario */}
+            </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 
-
-
 export default App;
+

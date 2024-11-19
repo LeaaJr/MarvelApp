@@ -24,7 +24,16 @@ const Home = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex flex-col items-center min-h-screen">
+  {/* Encabezado */}
+  <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-black text-center">
+    Buscar Personajes
+  </h2>
+  
+  {/* Instrucciones */}
+  <p className="mb-4 text-gray-700 dark:text-gray-400 text-center max-w-lg py-16">
+    Puedes Buscar cualquier personaje que quieras, ten en cuenta que debes de buscarlo en ingles y si quieres alguno en especial puedes buscarlo como: 'Spider-Man (Ultimate)', 'Spider-Woman (Charlotte Witter)'
+  </p>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         {character && (
           <img
@@ -35,12 +44,12 @@ const Home = () => {
         )}
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {character ? character.name : "Search for a Marvel character"}
+            {character ? character.name : "Buscar Personaje..."}
           </h5>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
             {character
               ? character.description || "No description available"
-              : "Enter a name to begin"}
+              : "Ingrese un nombre para comenzar"}
           </p>
 
           <form onSubmit={handleSearch} className="flex items-center max-w-sm mx-auto">
@@ -64,6 +73,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
