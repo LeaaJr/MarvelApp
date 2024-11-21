@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import fetchCharacters from "../Api/ApiMarvel.mjs";
+import BackImg from '../Img/118592-3840x2160-desktop-4k-avengers-wallpaper.jpg'
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,16 +25,24 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen">
-  {/* Encabezado */}
-  <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-black text-center">
-    Buscar Personajes
-  </h2>
-  
-  {/* Instrucciones */}
-  <p className="mb-4 text-gray-700 dark:text-gray-400 text-center max-w-lg py-16">
-    Puedes Buscar cualquier personaje que quieras, ten en cuenta que debes de buscarlo en ingles y si quieres alguno en especial puedes buscarlo como: 'Spider-Man (Ultimate)', 'Spider-Woman (Charlotte Witter)'
-  </p>
+    <div className="relative w-full h-[1000px] bg-cover bg-center overflow-hidden" style={{ backgroundImage: `url(${BackImg})` }}>
+  {/* Fondo oscuro */}
+  <div
+    className="absolute inset-0 bg-black bg-opacity-50"
+    style={{ filter: 'brightness(0.5)', zIndex: 1 }}
+  ></div>
+
+  {/* Contenido */}
+  <div className="relative z-10 flex flex-col items-center min-h-screen">
+    {/* Encabezado */}
+    <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white text-center">
+      Buscar Personajes
+    </h2>
+    
+    {/* Párrafo */}
+    <p className="mb-4 text-gray-700 dark:text-gray-400 text-center max-w-lg py-16">
+      Puedes Buscar cualquier personaje que quieras, ten en cuenta que debes de buscarlo en inglés y si quieres alguno en especial puedes buscarlo como: <strong>'Spider-Man (Ultimate)', 'Spider-Woman (Charlotte Witter)'</strong>
+    </p>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         {character && (
           <img
@@ -71,6 +80,7 @@ const Home = () => {
 
           {error && <p className="text-red-500">{error}</p>}
         </div>
+      </div>
       </div>
     </div>
     

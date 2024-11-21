@@ -7,6 +7,7 @@ import BannerCont from './Component/BannerCont';
 import Footer from './Component/Footer';
 import Home from './Page/Home';
 import Movies from './Page/Movies';
+import CardsDiag from './Component/CardsDiag';
 
 function App() {
   return (
@@ -14,13 +15,15 @@ function App() {
       <Navbar />
         <Banner />
           <BannerCont />
+
+          <CardsDiag />
       
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/movies" element={<Movies />} />
               {/* Agrega más rutas según sea necesario */}
             </Routes>
-
+          
       <Footer />
     </Router>
   );
