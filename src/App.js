@@ -8,6 +8,8 @@ import Footer from './Component/Footer';
 import Home from './Page/Home';
 import Movies from './Page/Movies';
 import CardsDiag from './Component/CardsDiag';
+import Page from './Page/Page';
+import Comics from './Page/Comiscs'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <BannerCont />
 
           <CardsDiag />
+          <Page />
+          <Comics />
       
             <Routes>
               <Route path="/" element={<Home />} />

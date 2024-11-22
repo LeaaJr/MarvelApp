@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import fetchCharacters from "../Api/ApiMarvel.mjs";
-import BackImg from '../Img/118592-3840x2160-desktop-4k-avengers-wallpaper.jpg'
+import BackImg from '../Img/FndPage.jpg'
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
