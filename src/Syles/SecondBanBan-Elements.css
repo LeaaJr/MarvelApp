@@ -5,6 +5,7 @@ main {
 
 section {
     /* Estilo para sección general */
+    border: none
 }
 
 .contenedor {
@@ -13,6 +14,7 @@ section {
     margin: auto;
     overflow: hidden;
     padding: 52px 0;
+    
 }
 
 .sec-galeria {
@@ -30,8 +32,9 @@ section {
     bottom: 0;
     left: 0;
     border-width: 0 0 35vh 100vw;
-    border-style: solid;
+    border-style: none;
     border-color: transparent transparent #fff transparent;
+    border: none
 }
 
 .sesgo-arriba {
@@ -41,7 +44,7 @@ section {
     left: 0;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
-    border-color: #fff transparent transparent transparent;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
 }
 
 .img-none {
@@ -64,7 +67,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(52, 73, 94, 0.815);
+    background: rgb(251, 251, 251);
 }
 
 .encima-div {
@@ -78,7 +81,7 @@ section {
 }
 
 .miembros {
-    /* Estilo para miembros */
+    
 }
 
 .cards {
@@ -87,6 +90,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: none
 }
 
 .card {
@@ -96,6 +100,7 @@ section {
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+    border: none
 }
 
 .fondo {

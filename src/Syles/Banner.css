@@ -8,7 +8,7 @@
     height: 500px; /* Ajusta la altura del banner */
     width: 30%; /*cualquier porcentaje que necesite */
     margin-left: 60rem; /* Para desplazarlo y hacer el efecto */
-    background-color: rgba(15, 15, 15, 0.693); /* Fondo oscuro semi-transparente */
+    background-color: rgba(15, 15, 15, 0.808); /* Fondo oscuro semi-transparente */
     transform: skew(11deg); /* Ángulo de inclinación */
     z-index: 0; /* Para que esté detrás del texto */
   }

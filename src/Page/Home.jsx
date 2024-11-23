@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import fetchCharacters from "../Api/ApiMarvel.mjs";
+import { fetchCharacters, fetchComics } from '../Api/ApiMarvel.mjs';
 import BackImg from '../Img/FndPage.jpg'
 
 const Home = () => {

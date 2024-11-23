@@ -1,9 +1,9 @@
 import React from "react";
-import '../Syles/Page-Elements.css'
+import '../Syles/SecondBanBan-Elements.css'
 
 
 
-const Page = () => {
+const SecondBan = () => {
     return (
         <section className="fondo">
             <div className="sesgo-arriba"></div>
@@ -21,4 +21,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default SecondBan;

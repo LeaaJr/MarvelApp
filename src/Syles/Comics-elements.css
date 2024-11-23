@@ -1,0 +1,48 @@
+.card-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Agrega esta clase en tu archivo de estilos (CSS) para asegurar un buen layout */
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem; /* Espaciado entre las tarjetas */
+  }
+  
+  .card {
+    height: 22rem;
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño máximo de las tarjetas */
+    margin: 10px;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté bien distribuido */
+    flex-grow: 1;
+  }
+  
+  .card img {
+    max-width: 100%; /* Asegura que las imágenes no se estiren más de lo permitido */
+    height: auto, 5rem; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Hace que la imagen ocupe toda la caja sin deformarse */
+  }
+
+  .card p {
+    max-height: 4rem; /* Limita la altura de la descripción */
+    overflow: hidden; /* Oculta el texto que sobrepasa la altura */
+    text-overflow: ellipsis; /* Muestra '...' si el texto es más largo */
+    line-height: 1.2rem; /* Espaciado entre líneas */
+  }
