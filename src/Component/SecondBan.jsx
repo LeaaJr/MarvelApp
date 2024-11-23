@@ -8,13 +8,13 @@ const SecondBan = () => {
         <section className="fondo">
             <div className="sesgo-arriba"></div>
             <div className="contenedor">
-                <h2 className="titulo-patrocinadores">Exploración</h2>
-                <h3 className="subtitulo-patrocinadores">Creación | Diseño | Configuración</h3>
+                <h2 className="titulo-patrocinadores">Exploration</h2>
+                <h3 className="subtitulo-patrocinadores">Search | Look | Read </h3>
                 <div className="clientes">
                     <div className="cliente">    
                     </div>
                 </div>
-                <h3 className="subtitulo-patrocinadores especial">y muchos más clientes...</h3>
+                <h3 className="subtitulo-patrocinadores especial"> and much more </h3>
             </div>
             <div className="sesgo-abajo-unico"></div>
         </section>

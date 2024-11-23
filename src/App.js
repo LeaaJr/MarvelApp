@@ -1,39 +1,41 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Component/NavBar';
+import Footer from './Component/Footer';
 import Banner from './Component/Banner';
 import BannerCont from './Component/BannerCont';
-import Footer from './Component/Footer';
-import Home from './Page/Home';
-import Movies from './Page/Movies';
 import CardsDiag from './Component/CardsDiag';
 import SecondBan from './Component/SecondBan';
-import Comics from './Component/Comiscs'
-
-
+import Comics from './Component/Comiscs';
+import Home from "./Page/Home";
+import Movies from "./Page/Movies";
 
 function App() {
   return (
     <Router>
       <Navbar />
-        <Banner />
-          <BannerCont />
-
-          <CardsDiag />
-          <SecondBan />
-          <Comics />
-      
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/movies" element={<Movies />} />
-              {/* Agrega más rutas según sea necesario */}
-            </Routes>
-          
+      <Routes>
+        {/* Ruta para Home */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Banner />
+              <BannerCont />
+              <CardsDiag />
+              <SecondBan />
+              <Comics />
+              <Home />
+            </>
+          }
+        />
+        
+        {/* Ruta para Movies */}
+        <Route path="/movies" element={<Movies />} />
+        
+      </Routes>
       <Footer />
     </Router>
   );
 }
 
 export default App;
-

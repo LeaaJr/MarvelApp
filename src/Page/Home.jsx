@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { fetchCharacters, fetchComics } from '../Api/ApiMarvel.mjs';
-import BackImg from '../Img/FndPage.jpg'
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,10 +24,11 @@ const Home = () => {
   };
 
   return (
-    <div className="relative w-full h-[1000px] bg-cover bg-center overflow-hidden" style={{ backgroundImage: `url(${BackImg})` }}>
+          
+    <div className="relative w-full h-[1000px] bg-cover bg-center overflow-hidden">
   {/* Fondo oscuro */}
   <div
-    className="absolute inset-0 bg-black bg-opacity-50"
+    className="absolute inset-0 bg-black bg-opacity-0"
     style={{ filter: 'brightness(0.5)', zIndex: 1 }}
   ></div>
 
