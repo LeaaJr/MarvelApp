@@ -30,8 +30,10 @@ function App() {
         />
         
         {/* Ruta para Movies */}
-        <Route path="/movies" element={<Movies />} />
-        
+        <Route
+          path="/movies"
+          element={<Movies />}
+        />
       </Routes>
       <Footer />
     </Router>
