@@ -78,8 +78,8 @@ const Movies = () => {
         {comics.map((comic) => (
           <div
             key={comic.id}
-            onClick={() => handleCardClick(comic.id)} // Agregar el evento de clic
-            onMouseMove={(e) => handleMouseMove(e, comic.id)} // Agregar el evento para el movimiento del mouse
+            onClick={() => handleCardClick(comic.id)}
+            onMouseMove={(e) => handleMouseMove(e, comic.id)}
             className={`card bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-500 
               ${selectedCard === comic.id ? 'scale-95' : 'hover:scale-105'} 
               ${selectedCard === comic.id ? 'bg-black bg-opacity-50' : ''}`}
@@ -88,7 +88,7 @@ const Movies = () => {
               transition: 'transform 0.2s ease-out',
               width: selectedCard === comic.id ? '90vw' : 'auto',
               height: selectedCard === comic.id ? '90vh' : 'auto',
-              margin: selectedCard === comic.id ? 'auto' : '0', // Centra la card cuando está seleccionada
+              margin: selectedCard === comic.id ? 'auto' : '0', 
               zIndex: selectedCard === comic.id ? '999' : '1',
               position: selectedCard === comic.id ? 'fixed' : 'relative',
               top: selectedCard === comic.id ? '50%' : 'auto',
@@ -96,7 +96,7 @@ const Movies = () => {
               transformOrigin: 'center',
               transform: selectedCard === comic.id
                 ? `translate(-50%, -50%) scale(1.2) rotateY(${cursorPos.x - 50}deg) rotateX(${-(cursorPos.y - 50)}deg)`
-                : 'none', // Aplica la rotación solo a la card seleccionada
+                : 'none', 
             }}
           >
             {selectedCard === comic.id && (
