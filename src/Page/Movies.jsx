@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchComics } from '../Api/ApiMarvel.mjs';
-import Carrousel from '../Component/Carousel.jsx';
+import CarrouselMovies from '../Component/CarouselMovies.jsx';
 
 
 const Movies = () => {
@@ -67,7 +67,7 @@ const Movies = () => {
 
   return (
     <div className='pb-16'>
-        <Carrousel />
+        <CarrouselMovies />
     <div className="relative">
       {/* Fondo oscuro cuando se selecciona una card */}
       {selectedCard !== null && (
